@@ -1,7 +1,7 @@
 {
-  "name": "react-minimo",
+  "name": "causa-dev-design-system",
   "version": "1.0.0",
-  "description": "Projeto criado para demonstrar o mínimo necessário para se começar uma aplicação React.",
+  "description": "Projeto criado para garantir o padrão de todas as interfaces criadas no Causa Dev.",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development",

@@ -1,76 +1,71 @@
-# Projeto React Mínimo
+# Projeto Causa Dev Design System
 
-Este é o repositório do Projeto React Mínimo, uma iniciativa que surge para demonstrar um modelo simplificado de uma aplicação React. Neste projeto, evitamos o uso de bibliotecas inicializadoras de projetos como o `create-react-app`, `Vite, entre outras, não por elas serem inerentemente ruins, mas sim pelo nosso objetivo de criar um projeto React mais simples e controlável.
+Este é o repositório do design system utilizado nos projetos do Causa Dev, uma iniciativa para garantir o padrão das interfaces criadas para os nossos projetos assim como a simplificação dos processos que envolvem a criação de projetos front-end.
+
+<!-- ## Contribuição e Projeto Causa Dev // TODO: Escrever sobre o projeto Causa Dev e como interessados podem fazer para entrar no projeto. -->
 
 ## Motivação
 
-A motivação para criar esse projeto decorre da constatação de que muitos iniciantes em React enfrentam uma barreira de aprendizado devido ao uso de bibliotecas inicializadoras. Essas ferramentas, apesar de serem extremamente úteis e agilizarem o processo de configuração inicial, muitas vezes acabam escondendo a lógica básica por trás de um projeto React.
+A motivação para criar essa biblioteca de componentes vem do objetivo de manter as coisas organizadas desde o começo e evitar retrabalho.
+Os projetos do Causa Dev sempre presarão pela praticidade do desenvolvedor, logo, essa biblioteca busca abstrair para o desenvolvedor todos os detalhes de design necessários para se construir uma interface padronizada, acessível e bonita.
 
-Inicialmente, essas bibliotecas podem parecer um atalho conveniente, pois configuram automaticamente um ambiente de desenvolvimento completo com uma série de características, tais como hot-reloading, transpilação ES6, rotas pré-configuradas, entre outras. No entanto, esse conforto inicial pode levar a uma compreensão limitada dos mecanismos subjacentes que impulsionam uma aplicação React.
+<!-- ## Estrutura // TODO: Descrever sobre o Atomic Design -->
 
-Além disso, essas bibliotecas introduzem uma infinidade de dependências e abstrações que, embora úteis em muitos casos, também podem tornar o código final mais pesado e complexo. Elas adicionam uma camada de complexidade adicional que, muitas vezes, não é necessária, especialmente para projetos menores e mais simples.
-
-A dependência de bibliotecas inicializadoras pode eventualmente levar a um sentimento de perda de controle sobre o projeto. Isso é particularmente verdadeiro quando se tenta configurar aspectos mais personalizados da aplicação ou se deparar com erros ou problemas de configuração.
-
-## O que este projeto propõe
-
-O Projeto React Mínimo propõe um retorno à essência do React. Nosso objetivo é fornecer um ponto de partida simples e descomplicado para quem quer entender o funcionamento interno de uma aplicação React sem a complexidade adicional introduzida por bibliotecas inicializadoras.
-
-Acredito que essa abordagem pode proporcionar uma base sólida para os desenvolvedores iniciantes que desejam ter controle total sobre seu projeto. Com o Projeto React Mínimo, o desenvolvedor tem a liberdade de expandir e personalizar a aplicação conforme necessário, mantendo a estrutura do projeto enxuta e fácil de entender.
-
-## Branches
-
-Por questões de organização decidi separar em branches diferentes a implementação tanto do typescript quanto do eslint nesse projeto, pois como a intenção é manter o projeto o mais limpo possível essas duas adições podem ser totalmente opcionais deixando assim a branch `master` do projeto mostrando realmente a versão mais limpa possível. Logo se está a procura de configurar seu projeto para usar typescript ou eslint dê uma olhada nas branches desse repositório.
-
-## Particularidades
-
-Aqui deixo anotado uma particularidade dessa branch. Como o uso do ESlint está muito intrínseco à IDE que você vai usar, deixo algumas recomendações para o uso do ESlint com o VSCode:
-
-- Instale a extensão no VSCode: `dbaeumer.vscode-eslint`
-- Configure seu Workspace para usar o ESlint da forma certa:
-```json
-{
-    "eslint.validate": [ "javascript", "javascriptreact", "html", "typescriptreact" ], // mostra erros no editor
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "always"
-    } // corrigir erros ao salvar
-}
-```
+<!-- ## Demonstração, Documentação e Testes // TODO: Descrever sobre o uso do Storybook -->
 
 ## Como executar localmente
 
 Siga as instruções abaixo para executar este projeto em sua máquina:
 
-1. Clone o repositório para sua máquina local usando `git clone https://github.com/HenrryEsposito/react-minimo.git`.
+1. Clone o repositório para sua máquina local usando `git clone https://github.com/Causa-Dev/causa-dev-design-system.git`.
 
-2. Navegue até o diretório clonado usando `cd react-minimo`.
+2. Navegue até o diretório clonado usando `cd causa-dev-design-system`.
 
 3. Instale todas as dependências do projeto usando `npm i`.
 
-4. Para executar o servidor de desenvolvimento, use o comando `npm start`.
+<!-- 4. Para executar o servidor de desenvolvimento, use o comando `npm start`. // TODO: adaptar para o uso do Storybook -->
 
-5. Acesse `http://localhost:8080/` para visualizar a página do projeto localmente.
+<!-- 5. Acesse `http://localhost:2460/` para visualizar a página do projeto localmente. // TODO: adaptar para o uso do Storybook -->
 
 6. Para criar uma versão de produção, use o comando `npm run build`.
 
-## Dependências
 
-Este projeto busca minimizar a poluição por dependências inúteis, evitando o uso de bibliotecas inicializadoras que adicionam muitas dependências desnecessárias. Aqui, cada dependência tem uma razão específica para estar presente:
+<!-- ## React Mínimo // TODO: Descrever um pouco sobre o projeto React Mínimo e deixar claro o porque esse projeto é um fork dele. -->
 
-### Dependências de Produção
-
-- `react`: A biblioteca React é a base de qualquer aplicação React. Ela é usada para criar componentes de interface do usuário.
-- `react-dom`: Esta biblioteca lida com a renderização dos componentes React no DOM do navegador.
-
-### Dependências de Desenvolvimento
-
-- `@babel/core` e `@babel/preset-react`: O Babel é um compilador JavaScript que é usado principalmente para converter o código ECMAScript 2015+ em uma versão compatível com versões anteriores do JavaScript que podem ser executadas por motores JavaScript mais antigos.
-- `babel-loader`: Este pacote permite transpilar arquivos JavaScript usando Babel e webpack.
-- `html-webpack-plugin`: Este é um plugin para o webpack que simplifica a criação de arquivos HTML para servir aos seus pacotes webpack.
-- `webpack`, `webpack-cli` e `webpack-dev-server`: O webpack é um empacotador de módulos estáticos para aplicações JavaScript modernas. O `webpack-cli` permite usar o webpack na linha de comando e `webpack-dev-server` é usado para servir rapidamente o aplicativo durante o desenvolvimento.
-
-Este projeto foi criado com a ideia de que menos é mais. Ao evitar bibliotecas inicializadoras de projetos, mantemos o controle total sobre nosso ambiente de desenvolvimento e produção. Isso nos dá a liberdade de configurar nosso projeto como desejarmos, e evita a inclusão de dependências desnecessárias que podem tornar o projeto mais pesado e mais difícil de gerenciar. É claro que cada uma das dependências acima possuem suas próprias dependências para conseguirem abstrair algumas coisas, mas de qualquer forma nosso projeto só está iniciando com 9 dependências diretas sendo que 7 delas não estarão presentes no nosso pacote final quando o projeto for buildado, pois tratam-se de bibliotecas usadas apenas para auxiliar no desenvolvimento (dev dependencies).
 
 ## Licença
 
 Este projeto está sob a licença GNU. Veja o arquivo `LICENSE` para mais detalhes.
+
+### Versionamento:
+
+**Exemplo de Versão: "1.04.01"**
+
+**Estrutura da Versão: A.B.C**
+
+**Significado dos Componentes:**
+
+- **A (Mudanças Grandes):** 
+  - Representa modificações significativas que alteram a forma de utilização da biblioteca.
+  - Estas mudanças requerem atualizações em projetos dependentes.
+  - Sempre que uma alteração desse calibre for implementada, o número da versão em "A" deve ser incrementado.
+
+- **B (Adição de Recursos):**
+  - Corresponde às adições de novas funcionalidades, como os layouts de retrospectiva no contexto deste projeto.
+  - A cada inclusão de um novo layout, a porção "B" da versão deve ser incrementada.
+
+- **C (Mudanças Menores):**
+  - Envolve ajustes e modificações pequenas, principalmente nos layouts existentes.
+  - Quando houver qualquer mudança simples a porção "B" da versão deve ser incrementada.
+
+### Deploy:
+
+- **Regras**
+  - Não subir modificações diretamente para a branch `Master`.
+  - Manipular o número de versão corretamente antes de submeter qualquer modificação para esse repositório.
+
+- **CI/CD**
+  - Esse repositório está configurado para realizar um deploy automático de um pacote no `Github Packages` assim que a branch `Master` recebe um push.
+  - Os repositórios dependentes devem atualizar suas dependências sempre que um novo package for lançado usando o comando `npm i` ou `yarn`.
+
+
