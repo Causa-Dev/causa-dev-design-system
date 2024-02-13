@@ -6,6 +6,10 @@ Este é o repositório do design system utilizado nos projetos do Causa Dev, uma
 
 <!-- ## Penpot // TODO: Escrever sobre o design system do Penpot e porque usamos ele -->
 
+<!-- ## Acessibilidade // TODO: Escrever sobre como nos preocupamos com a acessibilidade dos componentes aqui criados -->
+
+<!-- ## MUI // TODO: Escrever sobre como usamos a biblioteca MUI como base. -->
+
 ## Motivação
 
 A motivação para criar essa biblioteca de componentes vem do objetivo de manter as coisas organizadas desde o começo e evitar retrabalho.
