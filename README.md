@@ -4,6 +4,8 @@ Este é o repositório do design system utilizado nos projetos do Causa Dev, uma
 
 <!-- ## Contribuição e Projeto Causa Dev // TODO: Escrever sobre o projeto Causa Dev e como interessados podem fazer para entrar no projeto. -->
 
+<!-- ## Penpot // TODO: Escrever sobre o design system do Penpot e porque usamos ele -->
+
 ## Motivação
 
 A motivação para criar essa biblioteca de componentes vem do objetivo de manter as coisas organizadas desde o começo e evitar retrabalho.
